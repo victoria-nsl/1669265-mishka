@@ -1,0 +1,28 @@
+.social {
+  width: 140px;
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    padding: 25px 0 23px 0;
+
+    border-bottom: 1px solid $grey-border;
+  }
+}
+
+.social__list {
+  @include reset-style-list;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width: $mobile-max-width) {
+    width: 140px;
+    margin: 0 auto;
+  }
+}
+
+.social__link {
+  cursor: pointer;
+}
