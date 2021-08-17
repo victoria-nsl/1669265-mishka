@@ -1,0 +1,10 @@
+/*ГЛОБАЛЬНЫЕ СТИЛИ*/
+@import "global/variables.scss";
+@import "global/font.scss";
+@import "global/global.scss";
+@import "global/mixin.scss";
+
+/*БЛОКИ*/
+@import "blocks/page-header.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/handmade-production.scss"

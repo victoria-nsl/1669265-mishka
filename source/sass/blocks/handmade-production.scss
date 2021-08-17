@@ -1,0 +1,28 @@
+.handmade-production {
+  margin-top: -62px;
+
+  background-color: $grey-back;
+  border-top: 1px solid rgba($black, 0.1);
+}
+
+.handmade-production__container {
+  width: 1050px;
+  margin: 0 auto;
+  padding: 157px 50px 0 50px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 87%;
+  }
+}
+
+.handmade-production__title {
+  width: 700px;
+  margin: 0 auto;
+  padding: 0 0 355px 0;
+
+  font-weight: bold;
+  font-size: 53px;
+  line-height: 57px;
+  color: $black;
+  text-align: center;
+}
