@@ -283,6 +283,10 @@
   }
 }
 
+.main-navigation__user-item--cart:last-child {
+  box-shadow: none;
+}
+
 .main-navigation__user-link--cart {
   display: flex;
   justify-content: space-between;

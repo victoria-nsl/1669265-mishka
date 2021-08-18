@@ -2,7 +2,41 @@
   margin-top: -62px;
 
   background-color: $grey-back;
+  background-image: url("../img/handmade-production-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center start;
+  background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/handmade-production-desktop@2x.png");
+    background-size: 100% auto;
+  }
+
   border-top: 1px solid rgba($black, 0.1);
+
+  @media (max-width: $tablet-max-width) {
+    margin-top: -65px;
+    background-image: url("../img/handmade-production-tablet.png");
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/handmade-production-tablet@2x.png");
+      background-size: 100% auto;
+    }
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-top: -2px;
+
+    background-position: -15px -18px;
+    background-image: url("../img/handmade-production-mobile.png");
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/handmade-production-mobile@2x.png");
+      background-size: 100% auto;
+    }
+  }
 }
 
 .handmade-production__container {
@@ -13,6 +47,11 @@
   @media (max-width: $tablet-max-width) {
     width: 87%;
   }
+
+  @media (max-width: $mobile-max-width) {
+    width: 81%;
+    padding: 73px 9.5% 0 9.5%;
+  }
 }
 
 .handmade-production__title {
@@ -20,9 +59,140 @@
   margin: 0 auto;
   padding: 0 0 355px 0;
 
-  font-weight: bold;
+  font-weight: 700;
   font-size: 53px;
   line-height: 57px;
   color: $black;
   text-align: center;
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+    padding: 0 0 370px 0;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 0 0 120px 0;
+
+    font-size: 27px;
+    line-height: 30px;
+  }
+}
+
+.handmade-production__buttons {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 1050px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+  padding: 0 50px 0 50px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 87%;
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+.handmade-production__buttons::after {
+  position: absolute;
+  bottom: -17px;
+  right: 0;
+  content: "";
+
+  width: 100%;
+  height: 34px;
+
+  background-image: url("../img/back-icon-zigzag-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  @media (max-width: $tablet-max-width) {
+    bottom: -12px;
+    height: 24px;
+    background-image: url("../img/back-icon-zigzag-tablet.svg");
+    background-repeat: repeat;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 0;
+    height: 0;
+  }
+}
+
+.handmade-production__link {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: middle;
+  width: 525px;
+  padding: 25px 350px 34px 36px;
+  box-sizing: border-box;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: start;
+  color: $white;
+
+  cursor: pointer;
+
+  @media (max-width: $tablet-max-width) {
+    width: 50%;
+    padding: 25px 25% 34px 5.3%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    padding: 24px 36% 31px 9.3%;
+
+    font-size: 19px;
+    line-height: 24px;
+  }
+}
+
+.handmade-production__link--interior {
+  background-color: $light-green;
+}
+
+.handmade-production__link--toys {
+  background-color: $dark-green;
+}
+
+.handmade-production__link--interior::after {
+  position: absolute;
+  top: 50%;
+  right: 35px;
+  transform: translateY(-50%);
+  content: "";
+
+  width: 41px;
+  height: 62px;
+  background-image: url("../img/back-icon-lamp.svg");
+  background-repeat: no-repeat;
+}
+
+.handmade-production__link--toys::after {
+  position: absolute;
+  top: 50%;
+  right: 35px;
+  transform: translateY(-50%);
+  content: "";
+
+  width: 60px;
+  height: 61px;
+  background-image: url("../img/back-icon-toy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
