@@ -1,13 +1,16 @@
 .knitted-baskets {
   position: relative;
 
+  margin-bottom: 68px;
   padding-bottom: 90px;
 
   @media (max-width: $tablet-max-width) {
+    margin-bottom: 55px;
     padding-bottom: 65px;
   }
 
   @media (max-width: $mobile-max-width) {
+    margin-bottom: 30px;
     padding-bottom: 42px;
   }
 }
