@@ -5,8 +5,11 @@
 @import "global/mixin.scss";
 
 /*БЛОКИ*/
+@import "blocks/buttons.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-navigation.scss";
-@import "blocks/handmade-production.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
+//Главная страница
+@import "blocks/handmade-production.scss";
+@import "blocks/knitted-baskets.scss";

@@ -1,0 +1,30 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $dark;
+
+  border: 2px solid $dark;
+  cursor: pointer;
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 18px;
+  }
+}
+
+.button--knitted-baskets {
+  width: 292px;
+  padding: 16px 86px 13px 86px;
+  box-sizing: border-box;
+
+  @media (max-width: $mobile-max-width) {
+    width: 260px;
+    padding: 14px 70px 13px 70px;
+  }
+}

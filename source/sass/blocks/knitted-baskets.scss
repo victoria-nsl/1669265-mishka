@@ -1,0 +1,293 @@
+.knitted-baskets {
+  position: relative;
+
+  padding-bottom: 90px;
+
+  @media (max-width: $tablet-max-width) {
+    padding-bottom: 65px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-bottom: 42px;
+  }
+}
+
+.knitted-baskets::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+
+  width: 1050px;
+  height: 23px;
+
+  background-image: url("../img/knitted-baskets-zigzag-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+    height: 17px;
+
+    background-image: url("../img/knitted-baskets-zigzag-tablet.svg");
+    background-repeat: repeat;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    height: 6px;
+
+    background-image: url("../img/knitted-baskets-zigzag-mobile.svg");
+  }
+}
+
+//Заголовок - товар недели
+.knitted-baskets__wrapper-title {
+  position: relative;
+  z-index: 30;
+  bottom: -61px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 688px;
+  margin: 0 auto;
+  padding: 0 380px 0 82px;
+
+  @media (max-width: $tablet-max-width) {
+    bottom: 0;
+
+    width: 85.3%;
+    margin-bottom: 38px;
+    padding: 0 8.2% 0 6.5%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    width: 81%;
+    margin-bottom: 18px;
+    padding: 0 9.5% 0 9.5%;
+  }
+}
+
+.knitted-baskets__title {
+  order: 2;
+
+  width: 545px;
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 57px;
+  color: $black;
+
+  @media (max-width: $tablet-max-width) {
+    order: 1;
+    width: 450px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    margin-bottom: 4px;
+
+    font-size: 25px;
+    line-height: 30px;
+    text-align: start;
+  }
+}
+
+.knitted-baskets__promo {
+  order: 1;
+  width: 100px;
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  color: $light-green;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (max-width: $tablet-max-width) {
+    order: 2;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    margin-bottom: 0;
+
+    line-height: 20px;
+    text-align: start;
+  }
+}
+
+/* КАРТОЧКА С ОПИСАНИЕМ ТОВАРА ВЯЗАНЫЕ КОРЗИНКИ*/
+.knitted-baskets__card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 875px;
+  margin: 0 auto;
+  margin-top: -57px;
+  padding: 0 50px 0 225px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 87%;
+    margin-top: 0;
+    padding: 0 50px 0 50px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    width: 81%;
+    padding: 0 9.5% 0 9.5%;
+  }
+}
+
+//описание товара Вязаные корзины
+.knitted-baskets__wrapper-description {
+  width: 292px;
+  padding-top: 152px;
+
+  @media (max-width: $tablet-max-width) {
+    padding-top: 0;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    margin-bottom: 27px;
+  }
+}
+
+.knitted-baskets__description {
+  width: 292px;
+  margin: 0;
+  margin-bottom: 56px;
+
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: $dark;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    margin-bottom: 21px;
+
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+.knitted-baskets__parameter {
+  width: 292px;
+  margin-bottom: 109px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: $dark;
+
+  border-collapse: collapse;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 57px;
+  }
+
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.knitted-baskets__parameter td {
+  padding-top: 4px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid $grey-shadow;
+
+  @media (max-width: $tablet-max-width) {
+    padding-top: 7px;
+    padding-bottom: 12px;
+  }
+}
+
+.knitted-baskets__option-value {
+  @media (max-width: $mobile-max-width) {
+    padding-left: 13px;
+  }
+}
+
+//Изображение товара Вязаные корзины
+.knitted-baskets__wrapper-image {
+  width: 525px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 50%;
+    margin-top: 12px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 23px;
+  }
+}
+
+.knitted-baskets__wrapper-order img {
+  width: 525px;
+  height: 636px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+    height: 404px;
+
+    object-fit: cover;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    height: 315px;
+  }
+}
+
+//Заказ товара Вязаные корзины
+.knitted-baskets__wrapper-order {
+  position: relative;
+  top: -113px;
+
+  width: 292px;
+  margin-bottom: -113px;
+
+  text-align: center;
+
+  @media (max-width: $mobile-max-width) {
+    top: 0;
+
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.knitted-baskets__price {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $dark;
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 24px;
+
+    font-size: 17px;
+  }
+}
