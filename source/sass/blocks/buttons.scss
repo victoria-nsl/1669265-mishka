@@ -39,3 +39,14 @@
     padding: 16px 37px 13px 37px;
   }
 }
+
+.button--feedback {
+  width: 175px;
+  padding: 16px 26px 13px 26px;
+  box-sizing: border-box;
+
+  @media (max-width: $mobile-max-width) {
+    width: 260px;
+    padding: 16px 65px 13px 65px;
+  }
+}
