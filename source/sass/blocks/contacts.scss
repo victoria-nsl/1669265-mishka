@@ -1,0 +1,270 @@
+.contacts {
+  margin-bottom: 105px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 57px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 37px;
+  }
+}
+
+//ЗАГОЛОВОК
+.contacts__title {
+  position: relative;
+  bottom: -81px;
+
+  width: 291px;
+  margin: 0 auto;
+  padding: 0 635px 0 224px;
+
+  font-weight: bold;
+  font-size: 53px;
+  line-height: 57px;
+  color: $black;
+
+  @media (max-width: $tablet-max-width) {
+    bottom: 0;
+
+    width: 87%;
+    margin-bottom: 49px;
+    padding: 0 50px;
+
+    font-size: 43px;
+    line-height: 50px;
+    text-align: start;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 81%;
+    margin-bottom: 28px;
+    padding: 0 9.1%;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.contacts__title::before {
+  position: absolute;
+  top: -17px;
+  left: 113px;
+  content: "";
+
+  width: 47px;
+  height: 81px;
+
+  background-image: url("../img/back-icon-flag.svg");
+  background-repeat: no-repeat;
+
+  @media (max-width: $tablet-max-width) {
+    top: -23px;
+    left: 87%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    display: none;
+  }
+}
+
+//КОНТАКТНАЯ ИНФОРМАЦИЯ
+.contacts__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 876px;
+  margin: 0 auto;
+  margin-top: -57px;
+  padding: 0 50px 0 224px;
+
+  @media (max-width: $tablet-max-width) {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+  }
+}
+
+//ОПИСАНИЕ КОНТАКТНОЙ ИНФОРМАЦИИ
+.contacts__text {
+  width: 325px;
+  margin-bottom: 85px;
+  padding-top: 173px;
+
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: start;
+  color: $dark;
+
+  @media (max-width: $tablet-max-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 87%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0 50px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    width: 81%;
+    margin-bottom: 62px;
+    padding: 0 9.5%;
+
+    font-size: 14px;
+  }
+}
+
+//email
+.contacts__text-email {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 30px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.contacts__email-heading {
+  width: auto;
+}
+
+.contacts__link {
+  position: relative;
+
+  width: 249px;
+
+  color: $dark;
+
+  @media (max-width: $tablet-max-width) {
+    width: 255px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 183px;
+  }
+}
+
+.contacts__link::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: "";
+
+  width: 204px;
+  height: 1px;
+
+  background-color: $light-green-border;
+
+  @media (max-width: $tablet-max-width) {
+    top: 30px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    top: 26px;
+
+    width: 167px;
+  }
+}
+
+//адрес
+.contacts__text-address {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+
+  @media (max-width: $tablet-max-width) {
+    width: 50%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+  }
+}
+
+.contacts__address-heading {
+  width: auto;
+}
+
+.contacts__address {
+  width: 249px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 257px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 183px;
+  }
+}
+
+//КАРТА
+.contacts__map-block {
+  width: 527px;
+  height: 457px;
+
+  background-image: url("../img/map-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-desktop@2x.png");
+    background-size: 100% auto;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 53px;
+
+    background-image: url("../img/map-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.png");
+      background-size: 100% auto;
+    }
+  }
+
+  @media (max-width: $mobile-max-width) {
+    height: 454px;
+    margin-bottom: 42px;
+
+    background-image: url("../img/map-mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-mobile@2x.png");
+      background-size: 100% auto;
+    }
+  }
+}
+
+.contacts__map-block iframe {
+  width: 100%;
+  height: 457px;
+}
+
+//КНОПКА
+.contacts__button {
+  position: relative;
+  top: -53px;
+
+  margin-bottom: -53px;
+
+  @media (max-width: $tablet-max-width) {
+    top: 0;
+
+    margin: 0 auto;
+  }
+}

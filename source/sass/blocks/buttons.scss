@@ -28,3 +28,14 @@
     padding: 14px 70px 13px 70px;
   }
 }
+
+.button--contacts {
+  width: 230px;
+  padding: 16px 27px 13px 27px;
+  box-sizing: border-box;
+
+  @media (max-width: $mobile-max-width) {
+    width: 260px;
+    padding: 16px 37px 13px 37px;
+  }
+}
