@@ -2,11 +2,11 @@
   position: relative;
 
   margin-bottom: 68px;
-  padding-bottom: 90px;
+  padding-bottom: 97px;
 
   @media (max-width: $tablet-max-width) {
     margin-bottom: 55px;
-    padding-bottom: 65px;
+    padding-bottom: 70px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -130,9 +130,10 @@
 
 /* КАРТОЧКА С ОПИСАНИЕМ ТОВАРА ВЯЗАНЫЕ КОРЗИНКИ*/
 .knitted-baskets__card {
+  position: relative;
+
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   width: 875px;
   margin: 0 auto;
   margin-top: -57px;
@@ -161,6 +162,7 @@
   }
 
   @media (max-width: $mobile-max-width) {
+    order: 1;
     width: 100%;
     margin-bottom: 27px;
   }
@@ -201,7 +203,7 @@
   border-collapse: collapse;
 
   @media (max-width: $tablet-max-width) {
-    margin-bottom: 57px;
+    margin-bottom: 60px;
   }
 
 
@@ -231,14 +233,21 @@
 
 //Изображение товара Вязаные корзины
 .knitted-baskets__wrapper-image {
+  position: absolute;
+  top: 0;
+  right: 50px;
+
   width: 525px;
 
   @media (max-width: $tablet-max-width) {
-    width: 50%;
+    width: calc(50% - 50px);
     margin-top: 12px;
   }
 
   @media (max-width: $mobile-max-width) {
+    position: static;
+
+    order: 2;
     width: 100%;
     margin-top: 0;
     margin-bottom: 23px;
@@ -263,19 +272,16 @@
 
 //Заказ товара Вязаные корзины
 .knitted-baskets__wrapper-order {
-  position: relative;
-  top: -113px;
-
   width: 292px;
-  margin-bottom: -113px;
-
-  text-align: center;
 
   @media (max-width: $mobile-max-width) {
     top: 0;
+    order: 3;
 
     width: 100%;
     margin-bottom: 0;
+
+    text-align: center;
   }
 }
 
@@ -287,6 +293,7 @@
   font-size: 20px;
   line-height: 24px;
   color: $dark;
+  text-align: center;
 
   @media (max-width: $mobile-max-width) {
     margin-bottom: 24px;

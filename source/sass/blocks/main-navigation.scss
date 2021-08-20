@@ -120,6 +120,7 @@
   @include reset-style-list;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   order: 1;
   width: 405px;
@@ -141,6 +142,7 @@
   padding: 33px 0 31px 0;
 
   @media (max-width: $tablet-max-width) {
+    width: 50%;
     padding: 20px 0 20px 0;
   }
 
@@ -196,6 +198,7 @@
   @include reset-style-list;
 
   display: flex;
+  flex-wrap: wrap;
   order: 3;
   width: 348px;
 
@@ -348,6 +351,7 @@
   @include reset-style-list;
 
   display: flex;
+  flex-wrap: wrap;
   width: 350px;
 
   @media (max-width: $tablet-max-width) {

@@ -5,7 +5,7 @@
   margin: 0 auto;
   margin-bottom: 71px;
   padding: 0 50px;
-  padding-bottom: 90px;
+  padding-bottom: 92px;
 
   @media (max-width: $tablet-max-width) {
     width: 100%;
@@ -51,7 +51,9 @@
 }
 
 .feedback__wrapper {
-  padding: 76px 0 110px 175px;
+  position: relative;
+
+  padding: 76px 0 96px 175px;
 
   background-image: url("../img/feedback-desktop.png");
   background-repeat: no-repeat;
@@ -64,7 +66,7 @@
   }
 
   @media (max-width: $tablet-max-width) {
-    padding: 82px 0 65px 0;
+    padding: 82px 0 55px 0;
 
     background-size: 45.5% 100%;
 
@@ -78,11 +80,14 @@
     margin: 0 auto;
     padding: 0 9.5%;
 
+    text-align: center;
+
     background-image: none;
   }
 }
 
 .feedback__title {
+  width: 248px;
   margin: 0;
   margin-bottom: 35px;
 
@@ -123,7 +128,7 @@
 
   @media (max-width: $mobile-max-width) {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     padding: 0;
 
     text-align: start;
@@ -187,41 +192,35 @@
 
 .feedback__author-nik {
   font-weight: 400;
+
+  @media (max-width: $tablet-max-width) {
+    font-size: 17px;
+  }
 }
 
 //Написать и переключатель
-.feedback__wrapper-buttons {
-  position: relative;
-  top: -278px;
-
-  display: flex;
-  flex-direction: column;
-  width: 175px;
-  margin-left: 700px;
-  margin-bottom: -278px;
-
-  @media (max-width: $tablet-max-width) {
-    top: -328px;
-
-    margin-left: 70.7%;
-    margin-bottom: -328px;
-  }
-
-  @media (max-width: $mobile-max-width) {
-    top: 0;
-
-    width: 100%;
-    margin: 0 auto;
-  }
-}
 
 .feedback__toggles {
+  position: absolute;
+  right: 19px;
+  bottom: 107px;
+
   display: flex;
   justify-content: space-between;
   order: 2;
+  width: 137px;
+
+  @media (max-width: $tablet-max-width) {
+    right: 69px;
+    bottom: 65px;
+  }
 
   @media (max-width: $mobile-max-width) {
+    position: static;
+
     order: 1;
+    width: 260px;
+    margin: 0 auto;
     margin-bottom: 38px;
   }
 }
@@ -229,7 +228,7 @@
 .feedback__toggle--back {
   position: relative;
 
-  width: 70px;
+  width: 50px;
   height: 26px;
 
   background-color: transparent;
@@ -259,7 +258,7 @@
 .feedback__toggle--forward {
   position: relative;
 
-  width: 70px;
+  width: 50px;
   height: 26px;
   background-color: transparent;
   //border: none;
@@ -283,17 +282,20 @@
 }
 
 .feedback__button {
+  position: absolute;
+  right: 0;
+  top: 78px;
+
   order: 1;
-  margin-bottom: 188px;
 
   @media (max-width: $tablet-max-width) {
-    margin-bottom: 238px;
+    right: 50px;
   }
 
   @media (max-width: $mobile-max-width) {
-    order: 2;
+    position: static;
 
+    order: 2;
     margin: 0 auto;
-    margin-bottom: 0;
   }
 }
