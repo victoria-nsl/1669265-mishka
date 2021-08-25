@@ -50,3 +50,20 @@
     padding: 16px 65px 13px 65px;
   }
 }
+
+.button--modal-size {
+  width: 350px;
+  padding: 16px 113px 16px 112px;
+  box-sizing: border-box;
+
+  line-height: 20px;
+  color: $white;
+
+  border: none;
+  background-color: $light-green;
+
+  @media (max-width: $mobile-max-width) {
+    width: 260px;
+    padding: 16px 67px 16px 67px;
+  }
+}

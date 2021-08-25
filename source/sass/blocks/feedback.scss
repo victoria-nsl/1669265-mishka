@@ -16,7 +16,7 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    margin-bottom: 39px;
+    margin-bottom: 36px;
     padding-bottom: 52px;
   }
 }
@@ -222,6 +222,8 @@
     width: 260px;
     margin: 0 auto;
     margin-bottom: 38px;
+
+    border: 1px solid $grey-shadow;
   }
 }
 
@@ -232,25 +234,28 @@
   height: 26px;
 
   background-color: transparent;
-  //border: none;
+  border: none;
   cursor: pointer;
 
   @media (max-width: $mobile-max-width) {
     width: 50%;
     height: 52px;
+
+    border-right: 1px solid $grey-shadow;
   }
 }
 
 .feedback__toggle--back::after {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   content: "";
 
   width: 50px;
   height: 26px;
 
-  background-image: url(".../img/back-icon-arrow-left.svg");
+  background-image: url("../img/back-icon-arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -261,7 +266,7 @@
   width: 50px;
   height: 26px;
   background-color: transparent;
-  //border: none;
+  border: none;
 
   @media (max-width: $mobile-max-width) {
     width: 50%;
@@ -271,14 +276,15 @@
 
 .feedback__toggle--forward::before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   content: "";
 
   width: 50px;
   height: 26px;
 
-  background-image: url(".../img/back-icon-arrow-rigth.svg");
+  background-image: url("../img/back-icon-arrow-rigth.svg");
 }
 
 .feedback__button {

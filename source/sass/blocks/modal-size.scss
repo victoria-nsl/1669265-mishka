@@ -1,0 +1,133 @@
+.modal-size {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: none;
+
+  background-color: rgba($white, 0.9);
+}
+
+.modal-size__form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 566px;
+  min-height: 336px;
+  margin: 0 auto;
+  padding: 37px 93px 38px 93px;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background-color: $white;
+  border: 1px solid $grey-border-modal;
+  box-shadow: 0 5px 10px rgba($black-shadow-modal, 0.25);
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    padding: 29px 9.5% 46px 9.5%;
+  }
+}
+
+.modal-size__title {
+  margin: 0 auto;
+  margin-bottom: 11px;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 14px;
+
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+.modal-size__fieldset {
+  width: 350px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  padding: 0;
+
+  border: none;
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    margin-bottom: 31px;
+  }
+}
+
+.modal-size__legend {
+  margin-bottom: 19px;
+
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: $dark;
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 15px;
+  }
+}
+
+.modal-size__list {
+  @include reset-style-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.modal-size__item {
+  width: 112px;
+
+  @media (max-width: $mobile-max-width) {
+    width: 82px;
+  }
+}
+
+.modal-size__label {
+  display: block;
+  width: 100%;
+  padding: 16px 37px 16px 37px;
+  box-sizing: border-box;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $dark;
+
+  border: 2px solid rgba($dark, 0.1);
+  cursor: pointer;
+
+  @media (max-width: $mobile-max-width) {
+    padding: 18px 19px 18px 19px;
+  }
+}
+
+.modal-size__input:checked + .modal-size__label {
+  border: 2px solid $light-green;
+}
+
+.modal-size__label:hover {
+  border: 2px solid rgba($dark, 1);
+}
+
+.modal-size__label:active {
+  border: 2px solid  $light-green;
+}
+
+.modal-size__button {
+  margin: 0 auto;
+}
