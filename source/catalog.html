@@ -73,7 +73,135 @@
     </nav>
   </header>
 
-  <main>
+  <main class="main-catalog">
+    <div  class="main-catalog__container-title">
+      <h1 class= "main-catalog__title">Каталог товаров</h1>
+    </div>
+
+    <section class="catalog">
+      <h2 class="visually-hidden">Каталог товаров</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <div class="catalog__wrapper-image">
+            <a class="catalog__link-image" href="#" aria-label="Перейти на страницу с подробным описанием товара">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-1-mobile.webp 1x, img/catalog-1-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1149px)" srcset="img/catalog-1-tablet.webp 1x, img/catalog-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog-1-desktop.webp 1x, img/catalog-1-desktop@2x.webp 2x">
+
+                <source media="(max-width: 767px)" srcset="img/catalog-1-mobile.jpg 1x, img/catalog-1-mobile@2x.jpg 2x">
+                <source media="(max-width: 1149px)" srcset="img/catalog-1-tablet.jpg 1x, img/catalog-1-tablet@2x.jpg 2x">
+                <img width="316" height="462" src="img/catalog-1-desktop.jpg" srcset="img/catalog-1-desktop@2x.jpg 2x" alt="Изображение вязаного голубого зайчика">
+              </picture>
+            </a>
+          </div>
+          <div class="catalog__wrapper-description">
+            <h3 class="catalog__item-title">
+              <a class="catalog__link-title" href="#" aria-label="Перейти на страницу с подробным описанием товара">
+                Зайчик-попрыгайчик
+              </a>
+            </h3>
+            <p class="catalog__description">Рост 30 см, вес 200 г</p>
+            <div class="catalog__wrapper-price-link">
+              <p class="catalog__price" >1 200 руб.</p>
+              <a class="catalog__link-order" href="#" aria-label="Добавить в корзину">
+                <svg role ="img" width="21" height="18">
+                  <use xlink:href="img/svgsprite.svg#icon-cart"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="catalog__item">
+          <div class="catalog__wrapper-image">
+            <a class="catalog__link-image" href="#" aria-label="Перейти на страницу с подробным описанием товара">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-2-mobile.webp 1x, img/catalog-2-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1149px)" srcset="img/catalog-2-tablet.webp 1x, img/catalog-2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog-2-desktop.webp 1x, img/catalog-2-desktop@2x.webp 2x">
+
+                <source media="(max-width: 767px)" srcset="img/catalog-2-mobile.jpg 1x, img/catalog-2-mobile@2x.jpg 2x">
+                <source media="(max-width: 1149px)" srcset="img/catalog-2-tablet.jpg 1x, img/catalog-2-tablet@2x.jpg 2x">
+                <img width="316" height="462" src="img/catalog-2-desktop.jpg" srcset="img/catalog-2-desktop@2x.jpg 2x" alt="Изображение вязаной корзинки с бельем">
+              </picture>
+            </a>
+          </div>
+          <div class="catalog__wrapper-description">
+            <h3 class="catalog__item-title">
+              <a class="catalog__link-title" href="#" aria-label="Перейти на страницу с подробным описанием товара">
+                Корзинка для&nbsp;белья
+              </a>
+            </h3>
+            <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
+            <div class="catalog__wrapper-price-link">
+              <p class="catalog__price" >690 руб.</p>
+              <a class="catalog__link-order" href="#" aria-label="Добавить в корзину">
+                <svg role ="img" width="21" height="18">
+                  <use xlink:href="img/svgsprite.svg#icon-cart"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="catalog__item">
+          <div class="catalog__wrapper-image">
+            <a class="catalog__link-image" href="#" aria-label="Перейти на страницу с подробным описанием товара">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-3-mobile.webp 1x, img/catalog-3-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1149px)" srcset="img/catalog-3-tablet.webp 1x, img/catalog-3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog-3-desktop.webp 1x, img/catalog-3-desktop@2x.webp 2x">
+
+                <source media="(max-width: 767px)" srcset="img/catalog-3-mobile.jpg 1x, img/catalog-3-mobile@2x.jpg 2x">
+                <source media="(max-width: 1149px)" srcset="img/catalog-3-tablet.jpg 1x, img/catalog-3-tablet@2x.jpg 2x">
+                <img width="316" height="462" src="img/catalog-3-desktop.jpg" srcset="img/catalog-3-desktop@2x.jpg 2x" alt="Изображение вязаной корзинки с игрушками">
+              </picture>
+            </a>
+          </div>
+          <div class="catalog__wrapper-description catalog__wrapper-description--toy-basket">
+            <h3 class="catalog__item-title">
+              <a class="catalog__link-title" href="#" aria-label="Перейти на страницу с подробным описанием товара">
+                Большая корзинка для&nbsp;игрушек
+              </a>
+            </h3>
+            <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
+            <div class="catalog__wrapper-price-link">
+              <p class="catalog__price" >1 500 руб.</p>
+              <a class="catalog__link-order" href="#" aria-label="Добавить в корзину">
+                <svg role ="img" width="21" height="18">
+                  <use xlink:href="img/svgsprite.svg#icon-cart"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="production-process">
+      <div class="production-process__inner">
+        <h2 class="production-process__title">
+          Процесс производства
+        </h2>
+        <div class="production-process__video">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/production-process-mobile.webp 1x, img/production-process-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1149px)" srcset="img/production-process-tablet.webp 1x, img/production-process-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/production-process-desktop.webp 1x, img/production-process-desktop@2x.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="img/production-process-mobile.jpg 1x, img/production-process-mobile@2x.jpg 2x">
+            <source media="(max-width: 1149px)" srcset="img/production-process-tablet.jpg 1x, img/production-process-tablet@2x.jpg 2x">
+            <img width="683" height="455" src="img/production-process-desktop.jpg" srcset="img/production-process-desktop@2x.jpg 2x" alt="Изображение вязаной корзинки с игрушками">
+          </picture>
+          <button class="production-process__button-video" type="button" aria-label="Воспроизвести видео"></button>
+        </div>
+        <div class="production-process__wrapper-description-button">
+          <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о&nbsp;том, как появляются наши товары.</p>
+          <a class="button button--production-process" href="#">Сделать заказ</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer  class="page-footer">
@@ -122,6 +250,31 @@
       </div>
     </div>
   </footer>
+  <div class="modal-size">
+    <form class="modal-size__form" action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="modal-size__title">Добавить в&nbsp;корзину</h2>
+
+      <fieldset class="modal-size__fieldset">
+        <legend class="modal-size__legend">Выберите размер:</legend>
+        <ul class="modal-size__list">
+          <li class="modal-size__item">
+            <input class="modal-size__input visually-hidden" type="radio" id="size-s" name="size" value="small" checked>
+            <label class="modal-size__label" for="size-s">S</label>
+          </li>
+          <li class="modal-size__item">
+            <input class="modal-size__input visually-hidden" type="radio" id="size-m" name="size" value="medium">
+            <label class="modal-size__label" for="size-m">M</label>
+          </li>
+          <li class="modal-size__item">
+            <input class="modal-size__input visually-hidden" type="radio" id="size-l" name="size" value="large">
+            <label class="modal-size__label" for="size-l">L</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <button class="button button--modal-size modal-size__button" type="submit">Добавить</button>
+    </form>
+  </div>
   <script src="js/scripts.min.js"></script>
 </body>
 </html>
