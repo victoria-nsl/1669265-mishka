@@ -1,0 +1,179 @@
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.form__designation {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $light-green;
+}
+
+.form__list {
+  @include reset-style-list;
+}
+
+.form__label {
+  display: block;
+
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  color: $black;
+}
+
+.form__label--customer-contacts {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $light-green;
+}
+
+//Чекбоксы, радиокнопки
+
+.form__label--checkbox {
+  position: relative;
+
+  margin-left: 82px;
+
+  cursor: pointer;
+}
+
+.form__label--radio {
+  position: relative;
+
+  margin-left: 80px;
+
+  cursor: pointer;
+}
+
+.form__input--checkbox + .form__label--checkbox::before {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  left: -82px;
+  content: "";
+
+  width: 52px;
+  height: 52px;
+  box-sizing: border-box;
+
+  border: 1px solid $dark;
+}
+
+.form__input--checkbox:checked + .form__label--checkbox::after {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  left: -70px;
+  content: "";
+
+  width: 32px;
+  height: 22px;
+
+  background-image: url("../img/back-icon-check.svg");
+  background-repeat: no-repeat;
+}
+
+.form__input--radio + .form__label--radio::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -78px;
+  content: "";
+
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+
+  border: 2px solid $dark;
+  border-radius: 50%;
+}
+
+.form__input--radio:checked + .form__label--radio::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -65px;
+  content: "";
+
+  width: 20px;
+  height: 20px;
+  background-color: $light-green-border;
+  border-radius: 50%;
+}
+
+//Текстовые поля
+.form__input-text {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 18px;
+
+  font: inherit;
+
+  border: none;
+  box-shadow: inset 0 -2px 0 $black;
+}
+
+.form__input-text::placeholder {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 18px;
+  color: $black;
+
+  opacity: 0.3;
+}
+
+//Текстовые поля с иконками
+.form__wrapper-input-text {
+  position: relative;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+}
+
+//Текстареа
+.form__textarea {
+  font: inherit;
+}
+
+.form__textarea::placeholder {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 18px;
+  color: $black;
+
+  opacity: 0.3;
+  resize: none;
+}
+
+//Кнопка с примечанием
+.form__wrapper-button-notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+  margin: 0 auto;
+  padding: 0 225px;
+}
+
+.form__notice {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: $dark;
+}

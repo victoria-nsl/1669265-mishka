@@ -1,0 +1,34 @@
+.additionally {
+  margin-bottom: 47px;
+}
+
+.additionally__inner {
+  display: flex;
+
+  width: 1050px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.additionally__title {
+  width: 113px;
+  padding-left: 62px;
+  padding-top: 17px;
+}
+
+.additionally__field {
+  display: flex;
+  flex-wrap: wrap;
+  width: 875px;
+}
+
+.additionally__text {
+  width: 700px;
+  min-height: 144px;
+  padding-top: 15px;
+  padding-left: 16px;
+  box-sizing: border-box;
+
+  border: 2px solid $dark;
+  box-shadow: inset 0 -2px 0 $black;
+}

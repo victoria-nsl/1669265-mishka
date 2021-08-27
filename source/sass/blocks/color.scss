@@ -1,0 +1,33 @@
+.color {
+  margin-bottom: 50px;
+
+  background-color: $grey-back-footer;
+}
+
+.color__inner {
+  display: flex;
+
+  width: 1050px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 0 50px;
+  padding-top: 52px;
+}
+
+.color__title {
+  width: 113px;
+  padding-left: 62px;
+  padding-top: 17px;
+}
+
+.color__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 875px;
+  padding-top: 17px;
+}
+
+.color__item {
+  width: 262px;
+  margin-bottom: 57px;
+}

@@ -1,0 +1,37 @@
+.customer-contacts {
+  margin-bottom: 50px;
+
+  background-color: $grey-back-footer;
+}
+
+.customer-contacts__list {
+  width: 1050px;
+  margin: 0 auto;
+
+  padding: 0 50px;
+  padding-top: 50px;
+  padding-bottom: 26px;
+}
+
+
+.customer-contacts__item {
+  display: flex;
+  width: 1050px;
+  margin-bottom: 24px;
+}
+
+.customer-contacts__label {
+  width: 113px;
+  padding-left: 62px;
+  padding-top: 17px;
+}
+
+.customer-contacts__wrapper-input-text {
+  width: 680px;
+}
+
+.customer-contacts__input-text {
+  width: 100%;
+
+  background-color: $grey-back-footer;
+}

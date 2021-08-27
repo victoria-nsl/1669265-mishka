@@ -1,0 +1,26 @@
+.type {
+  margin-bottom: 66px;
+}
+
+.type__inner {
+  display: flex;
+
+  width: 1050px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.type__title {
+  width: 113px;
+  padding-left: 62px;
+  padding-top: 20px;
+}
+
+.type__list {
+  width: 875px;
+  padding-top: 17px;
+}
+
+.type__item:not(:last-child) {
+  margin-bottom: 58px;
+}
