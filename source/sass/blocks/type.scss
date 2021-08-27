@@ -8,17 +8,31 @@
   width: 1050px;
   margin: 0 auto;
   padding: 0 50px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 87%;
+  }
 }
 
 .type__title {
   width: 113px;
   padding-left: 62px;
   padding-top: 20px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 25%;
+    padding-left: 0;
+  }
 }
 
 .type__list {
   width: 875px;
   padding-top: 17px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 75%;
+    padding-top: 16px;
+  }
 }
 
 .type__item:not(:last-child) {

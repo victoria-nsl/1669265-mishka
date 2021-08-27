@@ -15,7 +15,7 @@
 
   @media (max-width: $tablet-max-width) {
     margin-top: -65px;
-    margin-bottom: 78px;
+    margin-bottom: 67px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -90,4 +90,9 @@
   font-size: 17px;
   line-height: 30px;
   color: $dark;
+
+  @media (max-width: $tablet-max-width) {
+    width: 87%;
+    padding: 0 50px;
+  }
 }

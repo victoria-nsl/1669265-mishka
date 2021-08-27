@@ -67,6 +67,10 @@
   box-sizing: border-box;
 
   border: 1px solid $dark;
+
+  @media (max-width: $tablet-max-width) {
+    top: 50%;
+  }
 }
 
 .form__input--checkbox:checked + .form__label--checkbox::after {
@@ -142,6 +146,10 @@
   top: 50%;
   right: -12px;
   transform: translateY(-50%);
+
+  @media (max-width: $tablet-max-width) {
+    right: 0;
+  }
 }
 
 //Текстареа
@@ -167,6 +175,11 @@
   width: 700px;
   margin: 0 auto;
   padding: 0 225px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 87%;
+    padding: 0 50px;
+  }
 }
 
 .form__notice {

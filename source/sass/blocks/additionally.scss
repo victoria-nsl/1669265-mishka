@@ -1,5 +1,9 @@
 .additionally {
   margin-bottom: 47px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .additionally__inner {
@@ -8,18 +12,31 @@
   width: 1050px;
   margin: 0 auto;
   padding: 0 50px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 87%;
+  }
 }
 
 .additionally__title {
   width: 113px;
   padding-left: 62px;
   padding-top: 17px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 25%;
+    padding-left: 0;
+  }
 }
 
 .additionally__field {
   display: flex;
   flex-wrap: wrap;
   width: 875px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 75%;
+  }
 }
 
 .additionally__text {
@@ -31,4 +48,8 @@
 
   border: 2px solid $dark;
   box-shadow: inset 0 -2px 0 $black;
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+  }
 }

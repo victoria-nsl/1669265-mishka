@@ -12,12 +12,21 @@
   margin-bottom: 10px;
   padding: 0 50px;
   padding-top: 52px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 87%;
+  }
 }
 
 .color__title {
   width: 113px;
   padding-left: 62px;
   padding-top: 17px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 25%;
+    padding-left: 0;
+  }
 }
 
 .color__list {
@@ -25,9 +34,18 @@
   flex-wrap: wrap;
   width: 875px;
   padding-top: 17px;
+
+  @media (max-width: $tablet-max-width) {
+    justify-content: space-between;
+    width: 75%;
+  }
 }
 
 .color__item {
   width: 262px;
   margin-bottom: 57px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 240px;
+  }
 }
