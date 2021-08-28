@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мишка(HTML Academy): главная страница</title>
+  <title>Мишка(HTML Academy): страница формы </title>
   <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font">
   <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
@@ -165,18 +165,18 @@
         <legend class = "visually-hidden">Контакты: телефон, электронная почта покупателя</legend>
         <ul class="customer-contacts__list form__list">
           <li class="customer-contacts__item">
-            <label class="form__label form__label--customer-contacts customer-contacts__label" for="tel"> Тел</label>
+            <label class="form__label form__label--customer-contacts-tel customer-contacts__label" for="tel"> Тел</label>
             <div class="form__wrapper-input-text customer-contacts__wrapper-input-text">
-              <input class="form__input-text customer-contacts__input-text" id="tel" type="text" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              <input class="form__input-text customer-contacts__input-text" id="tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
               <svg class="form__icon" width="25" height="24" aria-hidden="true">
                 <use xlink:href="img/svgsprite.svg#icon-tel"></use>
               </svg>
             </div>
           </li>
           <li class="customer-contacts__item">
-            <label class="form__label form__label--customer-contacts customer-contacts__label" for="email"> e-mail</label>
+            <label class="form__label  form__label--customer-contacts-email customer-contacts__label customer-contacts__label--email" for="email"> e-mail</label>
             <div class="form__wrapper-input-text customer-contacts__wrapper-input-text">
-              <input class="form__input-text customer-contacts__input-text " id="email" type="text" name="email" placeholder="Ваш Email*">
+              <input class="form__input-text customer-contacts__input-text " id="email" type="email" name="email" placeholder="Ваш Email*">
               <svg class="form__icon" width="32" height="21" aria-hidden="true">
                 <use xlink:href="img/svgsprite.svg#icon-envelope"></use>
               </svg>
@@ -199,7 +199,7 @@
       </fieldset>
 
       <div class="form__wrapper-button-notice">
-        <button class="button button--form form_button" type="submit">
+        <button class="button button--form form__button" type="submit">
           отправить заказ
         </button>
         <p class="form__notice">

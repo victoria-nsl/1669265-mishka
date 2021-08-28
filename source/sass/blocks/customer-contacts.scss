@@ -13,7 +13,6 @@
 .customer-contacts__list {
   width: 1050px;
   margin: 0 auto;
-
   padding: 0 50px;
   padding-top: 48px;
   padding-bottom: 28px;
@@ -25,9 +24,9 @@
   @media (max-width: $mobile-max-width) {
     flex-direction: column;
     width: 81%;
-    padding: 0 9.5%;
     margin: 0 auto;
     margin-bottom: -35px;
+    padding: 0 9.5%;
   }
 }
 
@@ -58,9 +57,17 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    width: 100%;
-    padding-top: 0;
+    width: 23%;
     margin-bottom: 4px;
+    padding-right: 77%;
+    padding-top: 0;
+  }
+}
+
+.customer-contacts__label--email {
+  @media (max-width: $mobile-max-width) {
+    width: 30%;
+    padding-right: 70%;
   }
 }
 

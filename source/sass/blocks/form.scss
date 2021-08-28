@@ -14,6 +14,24 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $light-green;
+
+  @media (max-width: $mobile-max-width) {
+    position: relative;
+  }
+}
+
+.form__designation::after {
+  @media (max-width: $mobile-max-width) {
+    position: absolute;
+    bottom: 9px;
+    right: 0;
+    content: "";
+
+    width: 77%;
+    height: 1px;
+
+    background-color: $light-green-border;
+  }
 }
 
 .form__list {
@@ -33,13 +51,48 @@
   }
 }
 
-.form__label--customer-contacts {
+.form__label--customer-contacts-tel,
+.form__label--customer-contacts-email {
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   color: $light-green;
+
+  @media (max-width: $mobile-max-width) {
+    position: relative;
+  }
 }
+
+.form__label--customer-contacts-tel::after {
+  @media (max-width: $mobile-max-width) {
+    position: absolute;
+    bottom: 9px;
+    right: 0;
+    content: "";
+
+    width: 77%;
+    height: 1px;
+
+    background-color: $light-green-border;
+  }
+}
+
+
+.form__label--customer-contacts-email::after {
+  @media (max-width: $mobile-max-width) {
+    position: absolute;
+    bottom: 9px;
+    right: 0;
+    content: "";
+
+    width: 70%;
+    height: 1px;
+
+    background-color: $light-green-border;
+  }
+}
+
 
 //Чекбоксы, радиокнопки
 
@@ -260,9 +313,8 @@
   }
 }
 
-.form_button {
+.form__button {
   @media (max-width: $mobile-max-width) {
     order: 2;
   }
 }
-
