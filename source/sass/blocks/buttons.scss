@@ -18,6 +18,16 @@
   }
 }
 
+.button:hover {
+  color: $white;
+  background-color: $dark;
+}
+
+.button:active {
+  color: rgba($white, 0.3);
+}
+
+
 .button--knitted-baskets {
   width: 292px;
   padding: 16px 86px 13px 86px;

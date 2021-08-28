@@ -40,7 +40,7 @@
   }
 }
 
-.main-navigation__logo-link img {
+.main-navigation__logo-link-image {
   width: 149px;
   height: 72px;
 
@@ -53,6 +53,14 @@
     width: 86px;
     height: 35px;
   }
+}
+
+.main-navigation__logo-link[href]:hover .main-navigation__logo-link-image {
+  opacity: 0.6;
+}
+
+.main-navigation__logo-link[href]:active .main-navigation__logo-link-image {
+  opacity: 0.3;
 }
 
 /*КНОПКА*/
@@ -179,6 +187,13 @@
   }
 }
 
+.main-navigation__site-link[href]:hover {
+  opacity: 0.6;
+}
+
+.main-navigation__site-link[href]:active {
+  opacity: 0.3;
+}
 
 .main-navigation--closed .main-navigation__site-list {
   @media (max-width: $mobile-max-width) {
@@ -234,6 +249,28 @@
   color: $black;
 }
 
+.main-navigation__user-link-image {
+  fill: $black;
+  opacity: 0.2;
+}
+
+.main-navigation__user-link:hover .main-navigation__user-link-image {
+  fill: $light-green;
+  opacity: 1;
+}
+
+.main-navigation__user-link:active .main-navigation__user-link-image {
+  opacity: 0.3;
+}
+
+.main-navigation__user-link:hover .main-navigation__user-link-text {
+  opacity: 0.6;
+}
+
+.main-navigation__user-link:active .main-navigation__user-link-text {
+  opacity: 0.3;
+}
+
 //поиск
 .main-navigation__user-item--search {
   width: 82px;
@@ -258,7 +295,7 @@
   }
 }
 
-.main-navigation__user-link--search span {
+.main-navigation__user-link-text--search {
   display: none;
 
   @media (max-width: $mobile-max-width) {
@@ -267,7 +304,7 @@
   }
 }
 
-.main-navigation__user-link--search svg {
+.main-navigation__user-link-image--search {
   width: 18px;
   height: 18px;
 }
@@ -302,7 +339,7 @@
   }
 }
 
-.main-navigation__user-link--cart span {
+.main-navigation__user-link-text--cart {
   width: 211px;
   text-align: end;
 
@@ -311,7 +348,7 @@
   }
 }
 
-.main-navigation__user-link--cart svg {
+.main-navigation__user-link-image--cart {
   width: 21px;
   height: 18px;
 }
@@ -372,6 +409,14 @@
   font-size: 15px;
   line-height: 24px;
   color: $black;
+}
+
+.main-navigation__offer-link:hover {
+  opacity: 0.6;
+}
+
+.main-navigation__offer-link:active {
+  opacity: 0.3;
 }
 
 .main-navigation__offer-delivery {

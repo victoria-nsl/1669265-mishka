@@ -29,8 +29,22 @@
   }
 }
 
-.page-footer__logo-link {
+.page-footer__logo-link[href] {
   cursor: pointer;
+}
+
+.page-footer__logo-link-image {
+  width: 102px;
+  height: 34px;
+  fill: $black;
+}
+
+.page-footer__logo-link[href]:hover .page-footer__logo-link-image {
+  fill: $dark-green;
+}
+
+.page-footer__logo-link[href]:active .page-footer__logo-link-image {
+  opacity: 0.3;
 }
 
 .page-footer__copyright {
@@ -62,4 +76,18 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
+}
+
+.page-footer__copyright-link-image {
+  width: 27px;
+  height: 34px;
+  fill: $light-green;
+}
+
+.page-footer__copyright-link:hover .page-footer__copyright-link-image {
+  fill: $dark-green;
+}
+
+.page-footer__copyright-link:active .page-footer__copyright-link-image {
+  opacity: 0.3;
 }

@@ -287,6 +287,14 @@
   background-image: url("../img/back-icon-arrow-rigth.svg");
 }
 
+.feedback__toggle:hover {
+  opacity: 0.6;
+}
+
+.feedback__toggle:active {
+  opacity: 0.3;
+}
+
 .feedback__button {
   position: absolute;
   right: 0;

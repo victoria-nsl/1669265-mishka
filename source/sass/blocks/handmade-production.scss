@@ -165,12 +165,50 @@
   }
 }
 
+
 .handmade-production__link--interior {
   background-color: $light-green;
 }
 
+.handmade-production__link--interior:hover {
+  margin-top: -5px;
+
+  padding-top: 25px;
+  padding-bottom: 39px;
+
+  background-color: $light-green-hover;
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 24px;
+    padding-bottom: 36px;
+  }
+}
+
+.handmade-production__link--interior:active::after {
+  opacity: 0.3;
+}
+
 .handmade-production__link--toys {
+  background-color: $green;
+}
+
+
+.handmade-production__link--toys:hover {
+  margin-top: -5px;
+
+  padding-top: 25px;
+  padding-bottom: 39px;
+
   background-color: $dark-green;
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 24px;
+    padding-bottom: 36px;
+  }
+}
+
+.handmade-production__link--toys:active::after {
+  opacity: 0.3;
 }
 
 .handmade-production__link--interior::after {

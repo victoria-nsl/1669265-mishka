@@ -27,3 +27,30 @@
 .social__link {
   cursor: pointer;
 }
+
+.social__link--instagram svg {
+  width: 22px;
+  height: 22px;
+}
+
+.social__link--facebook svg {
+  width: 15px;
+  height: 29px;
+}
+
+.social__link--twitter svg {
+  width: 24px;
+  height: 20px;
+}
+
+.social__link-image {
+  fill: $black;
+}
+
+.social__link:hover .social__link-image {
+  fill: $dark-green;
+}
+
+.social__link:active .social__link-image {
+  opacity: 0.3;
+}

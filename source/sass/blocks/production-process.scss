@@ -151,6 +151,15 @@
 }
 
 
+.production-process__button-video:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.production-process__button-video:active {
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0.3;
+}
+
 .production-process__wrapper-description-button {
   width: 252px;
   padding: 169px 35px 57px 79px;

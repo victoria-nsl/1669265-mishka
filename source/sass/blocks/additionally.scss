@@ -64,12 +64,6 @@
 .additionally__text {
   width: 700px;
   min-height: 144px;
-  padding-top: 15px;
-  padding-left: 16px;
-  box-sizing: border-box;
-
-  border: 2px solid $dark;
-  box-shadow: inset 0 -2px 0 $black;
 
   @media (max-width: $tablet-max-width) {
     width: 100%;
