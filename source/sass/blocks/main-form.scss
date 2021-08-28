@@ -1,5 +1,9 @@
 .main-form {
   margin-bottom: 50px;
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .main-form__container-title {
@@ -20,7 +24,7 @@
 
   @media (max-width: $mobile-max-width) {
     width: 81%;
-    margin-bottom: 31px;
+    margin-bottom: 18px;
     margin-top: -2px;
     padding: 73px 9.5% 0 9.5%;
   }
@@ -94,5 +98,14 @@
   @media (max-width: $tablet-max-width) {
     width: 87%;
     padding: 0 50px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 81%;
+    margin-bottom: 10px;
+    padding: 0 9.5%;
+
+    font-size: 13px;
+    line-height: 24px;
   }
 }

@@ -1,5 +1,9 @@
 .custome-name {
-  margin-bottom: 26px;
+  margin-bottom: 28px;
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .custome-name__inner {
@@ -12,16 +16,29 @@
   @media (max-width: $tablet-max-width) {
     width: 87%;
   }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    width: 81%;
+    padding: 0 9.5%;
+    margin: 0 auto;
+  }
 }
 
 .custome-name__title {
   width: 113px;
   padding-left: 62px;
-  padding-top: 17px;
+  padding-top: 21px;
 
   @media (max-width: $tablet-max-width) {
     width: 25%;
     padding-left: 0;
+    padding-top: 20px;
+    margin-bottom: 28px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
   }
 }
 
@@ -31,22 +48,36 @@
   @media (max-width: $tablet-max-width) {
     width: 75%;
   }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+  }
 }
 
 .custome-name__item {
   display: flex;
   align-items: center;
   width: 700px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
   @media (max-width: $tablet-max-width) {
     width: 100%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    margin-bottom: 23px;
   }
 }
 
 .custome-name__label {
   width: auto;
   margin-right: 26px;
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .custome-name__input-text {

@@ -1,7 +1,13 @@
 .customer-contacts {
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 
   background-color: $grey-back-footer;
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 36px;
+
+    background-color: $white;
+  }
 }
 
 .customer-contacts__list {
@@ -9,11 +15,19 @@
   margin: 0 auto;
 
   padding: 0 50px;
-  padding-top: 50px;
-  padding-bottom: 26px;
+  padding-top: 48px;
+  padding-bottom: 28px;
 
   @media (max-width: $tablet-max-width) {
     width: 87%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    width: 81%;
+    padding: 0 9.5%;
+    margin: 0 auto;
+    margin-bottom: -35px;
   }
 }
 
@@ -21,22 +35,32 @@
 .customer-contacts__item {
   display: flex;
   width: 1050px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
   @media (max-width: $tablet-max-width) {
     width: 100%;
-    margin-bottom: 25px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    margin-bottom: 35px;
   }
 }
 
 .customer-contacts__label {
   width: 113px;
   padding-left: 62px;
-  padding-top: 17px;
+  padding-top: 20px;
 
   @media (max-width: $tablet-max-width) {
     width: 25%;
     padding-left: 0;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 4px;
   }
 }
 
@@ -46,10 +70,18 @@
   @media (max-width: $tablet-max-width) {
     width: 72%;
   }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+  }
 }
 
 .customer-contacts__input-text {
   width: 100%;
 
   background-color: $grey-back-footer;
+
+  @media (max-width: $mobile-max-width) {
+    background-color: $white;
+  }
 }

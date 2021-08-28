@@ -92,4 +92,11 @@
   box-sizing: border-box;
 
   line-height: 16px;
+
+  @media (max-width: $mobile-max-width) {
+    width: 260px;
+    padding: 18px 37px 14px 37px;
+
+    font-size: 17px;
+  }
 }

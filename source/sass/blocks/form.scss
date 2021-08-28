@@ -27,6 +27,10 @@
   font-size: 19px;
   line-height: 18px;
   color: $black;
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 17px;
+  }
 }
 
 .form__label--customer-contacts {
@@ -45,6 +49,10 @@
   margin-left: 82px;
 
   cursor: pointer;
+
+  @media (max-width: $mobile-max-width) {
+    margin-left: 60px;
+  }
 }
 
 .form__label--radio {
@@ -53,6 +61,10 @@
   margin-left: 80px;
 
   cursor: pointer;
+
+  @media (max-width: $mobile-max-width) {
+    margin-left: 60px;
+  }
 }
 
 .form__input--checkbox + .form__label--checkbox::before {
@@ -71,13 +83,19 @@
   @media (max-width: $tablet-max-width) {
     top: 50%;
   }
+
+  @media (max-width: $mobile-max-width) {
+    width: 38px;
+    height: 38px;
+    left: -60px;
+  }
 }
 
 .form__input--checkbox:checked + .form__label--checkbox::after {
   position: absolute;
-  top: 35%;
+  top: 45%;
   transform: translateY(-50%);
-  left: -70px;
+  left: -72px;
   content: "";
 
   width: 32px;
@@ -85,6 +103,15 @@
 
   background-image: url("../img/back-icon-check.svg");
   background-repeat: no-repeat;
+
+  @media (max-width: $mobile-max-width) {
+    top: 50%;
+
+    width: 24px;
+    height: 17px;
+    left: -50px;
+    background-position: center -5px;
+  }
 }
 
 .form__input--radio + .form__label--radio::before {
@@ -94,45 +121,64 @@
   left: -78px;
   content: "";
 
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   box-sizing: border-box;
 
   border: 2px solid $dark;
   border-radius: 50%;
+
+  @media (max-width: $mobile-max-width) {
+    top: 48%;
+
+    width: 40px;
+    height: 40px;
+    left: -60px;
+  }
 }
 
 .form__input--radio:checked + .form__label--radio::after {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: -65px;
+  left: -63px;
   content: "";
 
   width: 20px;
   height: 20px;
   background-color: $light-green-border;
   border-radius: 50%;
+
+  @media (max-width: $mobile-max-width) {
+    top: 48%;
+
+    width: 16px;
+    height: 16px;
+    left: -48px;
+  }
 }
 
 //Текстовые поля
 .form__input-text {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 18px;
+  padding: 15px 0 15px 18px;
 
   font: inherit;
-
-  border: none;
-  box-shadow: inset 0 -2px 0 $black;
-}
-
-.form__input-text::placeholder {
   font-weight: 400;
   font-size: 19px;
   line-height: 18px;
   color: $black;
 
+  border: none;
+  box-shadow: inset 0 -2px 0 $black;
+
+  @media (max-width: $mobile-max-width) {
+    padding: 17px 0 16px 0;
+    font-size: 17px;
+  }
+}
+
+
+.form__input-text::placeholder {
   opacity: 0.3;
 }
 
@@ -150,21 +196,29 @@
   @media (max-width: $tablet-max-width) {
     right: 0;
   }
+
+  @media (max-width: $mobile-max-width) {
+    right: 4px;
+  }
 }
 
 //Текстареа
 .form__textarea {
   font: inherit;
-}
-
-.form__textarea::placeholder {
   font-weight: 400;
   font-size: 19px;
   line-height: 18px;
   color: $black;
 
-  opacity: 0.3;
   resize: none;
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 17px;
+  }
+}
+
+.form__textarea::placeholder {
+  opacity: 0.3;
 }
 
 //Кнопка с примечанием
@@ -180,6 +234,13 @@
     width: 87%;
     padding: 0 50px;
   }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    width: 81%;
+    padding: 0 9.5%;
+    margin: 0 auto;
+  }
 }
 
 .form__notice {
@@ -189,4 +250,19 @@
   font-size: 17px;
   line-height: 30px;
   color: $dark;
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    order: 1;
+    margin-bottom: 23px;
+
+    font-size: 14px;
+  }
 }
+
+.form_button {
+  @media (max-width: $mobile-max-width) {
+    order: 2;
+  }
+}
+
