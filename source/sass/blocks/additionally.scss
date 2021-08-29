@@ -2,11 +2,11 @@
   margin-bottom: 47px;
 
   @media (max-width: $tablet-max-width) {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 
   @media (max-width: $mobile-max-width) {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 }
 
@@ -63,7 +63,7 @@
 
 .additionally__text {
   width: 700px;
-  min-height: 144px;
+  min-height: 142px;
 
   @media (max-width: $tablet-max-width) {
     width: 100%;

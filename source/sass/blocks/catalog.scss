@@ -11,6 +11,7 @@
 
   @media (max-width: $mobile-max-width) {
     width: 80.8%;
+    margin-bottom: 2px;
     padding: 0 9.5%;
   }
 }
@@ -44,6 +45,8 @@
 
   @media (max-width: $mobile-max-width) {
     flex-direction: column;
+    width: 260px;
+    margin: 0 auto;
     margin-bottom: 30px;
   }
 }
@@ -93,14 +96,14 @@
 
   @media (max-width: $tablet-max-width) {
     width: 40%;
-    min-height: 280px;
-    padding: 27px 33px 25px 33px;
+    min-height: 282px;
+    padding: 27px 33px 23px 33px;
   }
 
   @media (max-width: $mobile-max-width) {
     width: 78.4%;
     min-height: 100%;
-    padding: 29px 28px 26px 28px;
+    padding: 25px 28px 24px 28px;
   }
 }
 
@@ -158,6 +161,8 @@
   color: $dark;
 
   @media (max-width: $mobile-max-width) {
+    margin-bottom: 18px;
+
     font-size: 13px;
   }
 }
@@ -175,6 +180,7 @@
   }
 
   @media (max-width: $mobile-max-width) {
+    width: 204px;
     padding-top: 23px;
   }
 }
