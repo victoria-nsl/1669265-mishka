@@ -1,4 +1,4 @@
-.modal-size {
+.modal-size__overlay {
   position: fixed;
   z-index: 50;
   top: 0;
@@ -16,7 +16,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 100;
 
+  display: none;
   width: 566px;
   min-height: 336px;
   margin: 0 auto;
@@ -33,6 +35,11 @@
     width: 100%;
     padding: 29px 9.5% 46px 9.5%;
   }
+}
+
+
+.modal-size__show {
+  display: block;
 }
 
 .modal-size__title {
