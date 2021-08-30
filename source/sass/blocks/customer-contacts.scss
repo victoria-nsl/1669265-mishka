@@ -33,11 +33,15 @@
 
 .customer-contacts__item {
   display: flex;
-  width: 1050px;
+  justify-content: space-between;
+  width: 813px;
+  margin: 0 auto;
   margin-bottom: 20px;
+  padding: 0 175px 0 62px;
 
   @media (max-width: $tablet-max-width) {
     width: 100%;
+    padding: 0;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -47,17 +51,13 @@
 }
 
 .customer-contacts__label {
-  width: 113px;
-  padding-left: 62px;
-  padding-top: 20px;
-
-  @media (max-width: $tablet-max-width) {
-    width: 25%;
-    padding-left: 0;
-  }
+  width: 88px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
   @media (max-width: $mobile-max-width) {
     width: 23%;
+    margin-top: 0;
     margin-bottom: 4px;
     padding-right: 77%;
     padding-top: 0;
@@ -72,10 +72,10 @@
 }
 
 .customer-contacts__wrapper-input-text {
-  width: 680px;
+  width: 700px;
 
   @media (max-width: $tablet-max-width) {
-    width: 72%;
+    width: 75%;
   }
 
   @media (max-width: $mobile-max-width) {

@@ -2,7 +2,7 @@
 const navigationMain = document.querySelector('.main-navigation');
 const navigationToggle = navigationMain.querySelector('.main-navigation__toggle');
 
-const buttonsOrder = document.querySelectorAll('.button--order');
+const buttonsOrder = document.querySelectorAll('.button-modal');
 const overlayPopupSize = document.querySelector('.modal-size__overlay');
 const formPopupSize = document.querySelector('.modal-size__form');
 
@@ -25,7 +25,7 @@ navigationToggle.addEventListener('click', () => {
 if (document.querySelector(".modal-size")) {
   buttonsOrder.forEach((buttonOrder) => {
     buttonOrder.addEventListener("click", (evt) => {
-     evt.preventDefault();
+      evt.preventDefault();
       formPopupSize.classList.add("modal-size__show");
       overlayPopupSize.classList.add("modal-size__show");
     });

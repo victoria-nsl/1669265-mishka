@@ -23,6 +23,11 @@
   background-color: $dark;
 }
 
+.button:focus {
+  background-color: $dark;
+  color: rgba($white, 0.5);
+}
+
 .button:active {
   color: rgba($white, 0.3);
 }
