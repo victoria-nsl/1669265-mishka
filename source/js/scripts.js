@@ -23,30 +23,32 @@ navigationToggle.addEventListener('click', () => {
 иконку корзинки на странице Каталога и его закрытие */
 
 if (document.querySelector(".modal-size")) {
+
   buttonsOrder.forEach((buttonOrder) => {
     buttonOrder.addEventListener("click", (evt) => {
       evt.preventDefault();
       formPopupSize.classList.add("modal-size__show");
-      overlayPopupSize.classList.add("modal-size__show");
+      overlayPopupSize.classList.add("modal-size-overlay__show");
     });
   });
 
-  overlayPopupSize.addEventListener("click", (evt) => {
-    if (overlayPopupSize.classList.contains("modal-size__show")) {
-      evt.preventDefault();
+  const closePopup = () => {
+    if (overlayPopupSize.classList.contains("modal-size-overlay__show") && formPopupSize.classList.contains("modal-size__show")) {
       formPopupSize.classList.remove("modal-size__show");
-      overlayPopupSize.classList.remove("modal-size__show");
+      overlayPopupSize.classList.remove("modal-size-overlay__show");
     }
+  }
+
+  overlayPopupSize.addEventListener("click", (evt) => {
+    evt.preventDefault();
+    closePopup();
   });
 
 
   window.addEventListener("keydown", (evt) => {
     if (evt.keyCode === 27) {
-      if (overlayPopupSize.classList.contains("modal-size__show")) {
-        evt.preventDefault();
-        formPopupSize.classList.remove("modal-size__show");
-        overlayPopupSize.classList.remove("modal-size__show");
-      }
+      evt.preventDefault();
+      closePopup();
     }
   });
 }
