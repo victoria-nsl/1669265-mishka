@@ -3,7 +3,7 @@ const navigationMain = document.querySelector('.main-navigation');
 const navigationToggle = navigationMain.querySelector('.main-navigation__toggle');
 
 const buttonsOrder = document.querySelectorAll('.button-modal');
-const overlayPopupSize = document.querySelector('.modal-size__overlay');
+const PopupSize = document.querySelector('.modal-size');
 const formPopupSize = document.querySelector('.modal-size__form');
 
 const slides = document.querySelectorAll(".feedback__item");
@@ -30,19 +30,19 @@ if (document.querySelector(".modal-size")) {
 
   const openPopup = () => {
     formPopupSize.classList.add("modal-size__show");
-    overlayPopupSize.classList.add("modal-size-overlay__show");
+    PopupSize.classList.add("modal-size-overlay__show");
 
     document.addEventListener("keydown", onDocumentEscKeydown);
-    overlayPopupSize.addEventListener("click", onClickOverlayPopupSize);
+    PopupSize.addEventListener("click", onClickPopupSize);
   }
 
   const closePopup = () => {
-    if (overlayPopupSize.classList.contains("modal-size-overlay__show") && formPopupSize.classList.contains("modal-size__show")) {
+    if (PopupSize.classList.contains("modal-size-overlay__show") /*&& formPopupSize.classList.contains("modal-size__show")*/) {
       formPopupSize.classList.remove("modal-size__show");
-      overlayPopupSize.classList.remove("modal-size-overlay__show");
+      PopupSize.classList.remove("modal-size-overlay__show");
 
       document.removeEventListener("keydown", onDocumentEscKeydown);
-      overlayPopupSize.removeEventListener("click", onClickOverlayPopupSize);
+      PopupSize.removeEventListener("click", onClickPopupSize);
     }
   }
 
@@ -51,7 +51,8 @@ if (document.querySelector(".modal-size")) {
     openPopup();
   };
 
-  const onClickOverlayPopupSize = () => {
+  const onClickPopupSize = (evt) => {
+    if(evt.target.matches("div"))
     closePopup();
   };
 
