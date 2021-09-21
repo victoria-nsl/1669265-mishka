@@ -15,7 +15,6 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 
 // Styles
-
 const styles = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
